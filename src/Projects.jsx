@@ -41,7 +41,7 @@ const projects = [
         name: "Portfolio Website",
         images: [Portfolio, Portfolio1, Portfolio2],
         tech: ["React", "Vite", "HTML", "CSS", "JavaScript", "TailwindCSS", "Framer Motion", "Primereact", "Primeflex", "Primeicons", "React Icons", "React Scroll", "React Slick"],
-        source: "https://github.com/yourgithub/portfolio",
+        source: "https://github.com/XdebronneX/pascua-portfolio",
     },
     {
         name: "Motorcycle Parts and Services",
@@ -74,7 +74,7 @@ const projects = [
             "Multer", "Dotenv", "Nodemon", 
             "Nodemailer", "Cookie-Parser", "Validator" 
         ],
-        source: "https://github.com/yourgithub/ecommerce",
+        source:"https://www.teampoor-motorcycle-parts-and-services.online/",
     },
     {
         name: "Inventory for Purchasing Items",

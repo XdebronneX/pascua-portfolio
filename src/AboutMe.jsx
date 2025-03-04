@@ -116,12 +116,12 @@ const AboutMe = () => {
         >
             {/* 🔹 About Me Text */}
             <p className="text-lg leading-relaxed text-gray-300 text-center tracking-wide">
-                Hi, I'm Novemger Dayot Pascua, a passionate Web Developer and IT Support Specialist. <br />
-                I love solving technical challenges, optimizing systems, and building functional, user-friendly websites. <br />
-                Technology has always fascinated me, and I’m constantly learning new tools to stay ahead in this ever-evolving field. <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm Novemger Dayot Pascua, a passionate Web Developer and IT Support Specialist.
+                I love solving technical challenges, optimizing systems, and building functional, user-friendly websites.
+                Technology has always fascinated me, and I’m constantly learning new tools to stay ahead in this ever-evolving field.
 
-                Beyond coding, I enjoy gaming, playing guitar, watching movies, and staying active. <br />
-                Music and creativity play a big role in my life, and I believe that problem-solving in tech requires just as much creativity as any art form. <br /><br />
+                Beyond coding, I enjoy gaming, playing guitar, watching movies, and staying active.
+                Music and creativity play a big role in my life, and I believe that problem-solving in tech requires just as much creativity as any art form.
 
                 My goal is to grow as a developer, contribute to impactful projects, and help businesses improve their IT infrastructure for a seamless digital experience.
             </p>

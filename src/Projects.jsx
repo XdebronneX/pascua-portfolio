@@ -24,12 +24,13 @@ import { MdOutlineTransitEnterexit } from "react-icons/md";
 import freelance1 from "./assets/freelance1.png";
 import freelance2 from "./assets/freelance1-1.png";
 import freelance3 from "./assets/freelance1-2.png";
+import { LuExternalLink } from "react-icons/lu";
 
 const projects = [
     {
         name: "Backend API E-Learning",
         images: [freelance1, freelance2, freelance3],
-        tech: ["Node", "Express", "Mongoose", "Bcryptjs", "JsonWebToken", "Multer", "Dotenv", "Nodemon", "Nodemailer", "Moment-Timezone", "Cloudinary", "Cors", "Crypto", "Cookie-Parser", "Validator","Compression"],
+        tech: ["Node", "Express", "Mongoose", "Bcryptjs", "JsonWebToken", "Multer", "Dotenv", "Nodemon", "Nodemailer", "Moment-Timezone", "Cloudinary", "Cors", "Crypto", "Cookie-Parser", "Validator", "Compression"],
         source: "https://github.com/XdebronneX/gv-backend",
     },
     {
@@ -48,34 +49,34 @@ const projects = [
         name: "Motorcycle Parts and Services",
         images: [motorcycle, motorcycle1, motorcycle2],
         tech: [
-            "HTML", "CSS", "JavaScript",   
-            "React", "Redux",              
-            "React-Helmet", "React Router", 
-            "TailwindCSS",                  
-            "PrimeReact", "Primeflex", "PrimeIcons", 
-            "Chakra UI", "Framer Motion",   
-            "MDBReact", "React Bootstrap",  
-            "Formik", "Yup",                
-            "React Hook Form",              
-            "Axios", "CORS",                 
-            "SweetAlert2", "React-Toastify",  
-            "Chart.js", "Recharts", "React-ChartJS-2", 
-            "XLSX", "jsPDF", "React-PDF", "HTML2Canvas", 
-            "React-Datepicker",               
-            "React-Phone-Number-Input",  
-            "Select-Philippines-Address",  
-            "React-Responsive-Carousel",      
-            "React-Slick", "Slick Carousel", 
-            "React-Spinners",                
-            "React-To-Print",                
-            "React-Simple-Star-Rating",       
-            "Styled-Components",              
+            "HTML", "CSS", "JavaScript",
+            "React", "Redux",
+            "React-Helmet", "React Router",
+            "TailwindCSS",
+            "PrimeReact", "Primeflex", "PrimeIcons",
+            "Chakra UI", "Framer Motion",
+            "MDBReact", "React Bootstrap",
+            "Formik", "Yup",
+            "React Hook Form",
+            "Axios", "CORS",
+            "SweetAlert2", "React-Toastify",
+            "Chart.js", "Recharts", "React-ChartJS-2",
+            "XLSX", "jsPDF", "React-PDF", "HTML2Canvas",
+            "React-Datepicker",
+            "React-Phone-Number-Input",
+            "Select-Philippines-Address",
+            "React-Responsive-Carousel",
+            "React-Slick", "Slick Carousel",
+            "React-Spinners",
+            "React-To-Print",
+            "React-Simple-Star-Rating",
+            "Styled-Components",
             "Express", "Node", "Mongoose",
-            "Cloudinary", "JsonWebToken", "Bcryptjs", 
-            "Multer", "Dotenv", "Nodemon", 
-            "Nodemailer", "Cookie-Parser", "Validator" 
+            "Cloudinary", "JsonWebToken", "Bcryptjs",
+            "Multer", "Dotenv", "Nodemon",
+            "Nodemailer", "Cookie-Parser", "Validator"
         ],
-        source:"https://www.teampoor-motorcycle-parts-and-services.online/",
+        source: "https://www.teampoor-motorcycle-parts-and-services.online/",
     },
     {
         name: "Inventory for Purchasing Items",
@@ -152,13 +153,18 @@ const Projects = () => {
 
                         {/* Push Button to the Bottom */}
                         <div className="mt-auto flex justify-center pt-6">
-                            <Button
-                                label="View Project"
-                                icon={<MdOutlineTransitEnterexit className="text-xl" />}
-                                className="p-button-sm p-button-primary bg-green-600 text-white hover:bg-green-700 transition-all duration-300 flex items-center gap-2"
+                            <button
+                                className="group px-6 py-2.5 text-white font-semibold rounded-lg flex items-center gap-3 
+                            bg-blue-500 bg-opacity-30 backdrop-blur-md shadow-md 
+                            hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-400/50 
+                                transition-all duration-300"
                                 onClick={() => window.open(project.source, "_blank")}
-                            />
+                            >
+                                View Project
+                                <LuExternalLink className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                            </button>
                         </div>
+
                     </Card>
                 ))}
             </div>

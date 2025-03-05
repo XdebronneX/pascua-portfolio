@@ -1,15 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Element, scroller } from "react-scroll";
+import { Element } from "react-scroll";
 import Navigation from "./Navigation";
 import AboutMe from "./AboutMe";
 import WebDeveloperTechStack from "./WebDeveloperTechStack";
 import ITSupportStack from "./ITSupportStack";
 import Footer from "./Footer";
-import ProfilePicture from "./assets/myself.png";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
-import { Button } from "primereact/button";
 import { FaGamepad, FaFilm, FaGuitar, FaDumbbell, FaMusic } from "react-icons/fa";
 
 const fadeUp = {
@@ -18,21 +16,6 @@ const fadeUp = {
 };
 
 const App = () => {
-  const handleLearnMore = () => {
-    scroller.scrollTo("hobbies-section", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-
-  const handleSendMessage = () => {
-    scroller.scrollTo("contact", {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
 
   return (
     <div id="home" className="min-h-screen bg-gray-900 text-white">
@@ -80,7 +63,7 @@ const App = () => {
         </motion.div>
       </Element>
 
-      {/* 🔹 Work Experience */}
+      {/*  Work Experience */}
       <Element name="work-experience">
         <motion.div variants={fadeUp} whileInView="visible" initial="hidden" viewport={{ once: true }}>
           <WorkExperience />

@@ -18,19 +18,19 @@ const Footer = () => {
                     <p className="text-gray-300 mb-4 text-lg">Feel free to reach out via phone or email.</p>
                     <div className="space-y-2">
                         <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
-                            <FaPhoneAlt className="text-blue-400 text-2xl" />
+                            <FaPhoneAlt className="text-gray-300 text-2xl" />
                             <a href="tel:+639295360588" className="hover:text-blue-500 transition duration-300">
                                 +63 929 536 0588
                             </a>
                         </div>
                         <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
-                            <FaEnvelope className="text-red-400 text-2xl" />
-                            <a href="mailto:novemgerpascua1019@gmail.com" className="hover:text-red-500 transition duration-300">
+                            <FaEnvelope className="text-gray-300 text-2xl" />
+                            <a href="mailto:novemgerpascua1019@gmail.com" className="hover:text-blue-500 transition duration-300">
                                 novemgerpascua1019@gmail.com
                             </a>
                         </div>
                         <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
-                            <FaMapMarkerAlt className="text-green-400 text-2xl" />
+                            <FaMapMarkerAlt className="text-gray-200 text-2xl" />
                             <span className="text-gray-300">Central Bicutan, Taguig City, Metro Manila, Philippines</span>
                         </div>
                     </div>
@@ -67,12 +67,16 @@ const Footer = () => {
                     <a
                         href="/pascua-portfolio/Pascua_Novemger_D_Resume.pdf"
                         download="Novemger_Pascua_Resume.pdf"
-                        className="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md text-lg font-semibold hover:bg-blue-600 transition duration-300"
+                        className="group inline-flex items-center px-6 py-3 text-lg font-semibold text-white 
+                    bg-blue-500 bg-opacity-30 backdrop-blur-md shadow-md rounded-lg 
+                    hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-400/50 
+                    transition-all duration-300"
                     >
-                        <FaDownload className="mr-2" />
+                        <FaDownload className="mr-2 text-xl transition-transform duration-300 group-hover:translate-y-1.5 group-hover:scale-110" />
                         Download
                     </a>
                 </div>
+
             </div>
 
             {/* Footer Text */}

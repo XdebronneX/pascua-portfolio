@@ -1,6 +1,6 @@
 import React from "react";
 import { Menubar } from "primereact/menubar";
-import { scroller } from "react-scroll"; // ✅ Smooth scrolling
+import { scroller } from "react-scroll";
 
 const scrollToSection = (section) => {
     scroller.scrollTo(section, {

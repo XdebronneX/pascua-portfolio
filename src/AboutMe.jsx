@@ -1,113 +1,10 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FaGamepad, FaFilm, FaGuitar, FaDumbbell } from "react-icons/fa";
-
-// const AboutMe = () => {
-//     return (
-//         <motion.div
-//             id="about"
-//             className="p-8 text-center"
-//             initial={{ opacity: 0, y: 20 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 1, ease: "easeInOut" }}
-//         >
-//             {/* About Me Text */}
-//             <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
-//                 I am seeking an opportunity to apply my knowledge and skills in Information Technology,
-//                 focusing on problem-solving and system optimization. I am committed to continuously
-//                 enhancing my expertise, gaining hands-on experience, and contributing to efficient and reliable IT operations.
-//             </p>
-
-//             {/* Hobbies Section */}
-//             <div className="mt-8">
-//                 <h2 className="text-xl font-semibold text-gray-700">Hobbies & Interests</h2>
-//                 <div className="flex justify-center gap-8 mt-4">
-//                     <div className="flex flex-col items-center">
-//                         <FaGamepad className="text-3xl text-blue-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Gaming</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaFilm className="text-3xl text-red-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Movies</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaGuitar className="text-3xl text-yellow-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Guitar</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaDumbbell className="text-3xl text-green-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Fitness</span>
-//                     </div>
-//                 </div>
-//             </div>
-//         </motion.div>
-//     );
-// };
-
-// export default AboutMe;
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { FaGamepad, FaFilm, FaGuitar, FaDumbbell, FaMusic } from "react-icons/fa";
-
-// const AboutMe = () => {
-//     return (
-//         <motion.div
-//             id="about"
-//             className="p-8 text-center font-silkscreen"
-//             initial={{ opacity: 0, y: 20 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 1, ease: "easeInOut" }}
-//         >
-//             {/* About Me Text */}
-//             <p className="text-lg leading-relaxed text-gray-300 text-center">
-//                 I am seeking an opportunity to apply my knowledge and skills in Information
-//                 Technology, focusing on problem-solving and system optimization. I am committed
-//                 to continuously enhancing my expertise, gaining hands-on experience, and contributing
-//                 to efficient and reliable IT operations.
-//             </p>
-
-//             {/* Hobbies Section */}
-//             <div className="mt-8">
-//                 <h2 className="text-xl font-semibold text-gray-300">Hobbies & Interests</h2>
-//                 <div className="flex justify-center gap-8 mt-4">
-//                     <div className="flex flex-col items-center">
-//                         <FaGamepad className="text-3xl text-blue-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Gaming</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaFilm className="text-3xl text-red-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Movies</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaGuitar className="text-3xl text-yellow-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Guitar</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaDumbbell className="text-3xl text-green-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Fitness</span>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <FaMusic className="text-3xl text-purple-500 transition-transform transform hover:scale-110" />
-//                         <span className="text-sm mt-2">Music</span>
-//                     </div>
-
-//                 </div>
-//             </div>
-//         </motion.div>
-//     );
-// };
-
-// export default AboutMe;
-
-
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGamepad, FaFilm, FaGuitar, FaDumbbell, FaMusic } from "react-icons/fa";
 import ProfilePicture from "./assets/myself.png";
 import { Button } from "primereact/button";
-import { Element, scroller } from "react-scroll";
-
+import { scroller } from "react-scroll";
+import { FaPaperPlane } from "react-icons/fa";
+import { BsInfoCircleFill } from "react-icons/bs";
 const AboutMe = () => {
     const handleLearnMore = () => {
         scroller.scrollTo("hobbies-section", {
@@ -145,10 +42,28 @@ const AboutMe = () => {
                 </p>
 
                 {/* Buttons */}
-                <div className="mt-6 flex justify-center gap-4">
-                    <Button label="More About Me" className="mr-3 p-button-raised" onClick={handleLearnMore} />
-                    <Button label="Send Message" className="p-button-outlined" onClick={handleSendMessage} />
+                <div className="mt-6 flex justify-center gap-6">
+                    <button
+                        onClick={handleLearnMore}
+                        className="group flex items-center gap-2 px-6 py-3 text-lg font-semibold text-white 
+                   bg-blue-600 rounded-lg shadow-md transition-all duration-300 
+                   hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-400/50"
+                    >
+                        <BsInfoCircleFill className="text-xl transition-transform duration-300 group-hover:scale-110" />
+                        More About Me
+                    </button>
+
+                    <button
+                        onClick={handleSendMessage}
+                        className="group flex items-center gap-2 px-6 py-3 text-lg font-semibold text-blue-500 
+                   border border-blue-500 rounded-lg shadow-md transition-all duration-300 
+                   hover:bg-blue-500 hover:text-white hover:shadow-lg hover:shadow-blue-400/50"
+                    >
+                        <FaPaperPlane className="text-xl transition-transform duration-300 group-hover:-translate-y-1" />
+                        Send Message
+                    </button>
                 </div>
+
             </motion.div>
 
             {/* Right Image */}
@@ -175,28 +90,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
-
-// return (
-{/* <div className="grid grid-nogutter surface-0 text-800 min-h-screen">
-    <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center min-h-full shadow-lg">
-        <section id="hero" className="animate__animated animate__fadeInLeft animate__delay-1s">
-            <span className="block text-6xl font-bold mb-1 animate__animated animate__fadeIn animate__delay-1s">Create the screens</span>
-            <div className="text-6xl text-primary font-bold mb-3 animate__animated animate__fadeIn animate__delay-2s">your visitors deserve to see</div>
-            <p className="mt-0 mb-4 text-700 line-height-3 animate__animated animate__fadeIn animate__delay-3s">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <Button label="Learn More" type="button" className="mr-3 p-button-raised animate__animated animate__fadeIn animate__delay-4s" />
-            <Button label="About Us" type="button" className="p-button-outlined animate__animated animate__fadeIn animate__delay-4s" />
-        </section>
-    </div>
-    <div className="col-12 md:col-6 overflow-hidden min-h-full shadow-lg">
-        <img
-            src={imgLogo}
-            alt="hero-1"
-            className="md:ml-auto block md:h-full animate__animated animate__zoomIn"
-            style={{ clipPath: 'polygon(8% 0, 100% 0%, 100% 100%, 0 100%)', height: '100vh', objectFit: 'cover' }}
-        />
-    </div>
-</div>
-); */}

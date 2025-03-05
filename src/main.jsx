@@ -3,9 +3,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import "primereact/resources/themes/lara-light-blue/theme.css"; // Choose a theme
-import "primereact/resources/primereact.min.css"; // Core CSS
-import "primeicons/primeicons.css"; // Icons
+import "primereact/resources/themes/lara-light-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

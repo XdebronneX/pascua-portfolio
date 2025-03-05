@@ -15,7 +15,7 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div className="text-center md:text-left">
                     <h2 className="text-3xl font-bold mb-3 text-blue-400">Contact Me</h2>
-                    <p className="text-gray-300 mb-4 text-lg">Feel free to reach out via phone or email.</p>
+                    <p className="text-gray-300 mb-4 text-lg">Feel free to reach out via phone or email</p>
                     <div className="space-y-2">
                         <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
                             <FaPhoneAlt className="text-gray-300 text-2xl" />
@@ -39,7 +39,7 @@ const Footer = () => {
                 {/* Social Links */}
                 <div className="text-center">
                     <h2 className="text-3xl font-bold mb-3 text-blue-400">Follow Me</h2>
-                    <p className="text-gray-300 mb-4 text-lg">Connect with me on social media.</p>
+                    <p className="text-gray-300 mb-4 text-lg">Connect with me on platforms below</p>
                     <div className="flex justify-center gap-6 mt-2">
                         {[
                             { icon: FaGithub, href: "https://github.com/XdebronneX", color: "hover:text-gray-400" },
@@ -63,7 +63,7 @@ const Footer = () => {
                 {/* Resume Download */}
                 <div className="text-center md:text-right">
                     <h2 className="text-3xl font-bold mb-3 text-blue-400">Resume</h2>
-                    <p className="text-gray-300 mb-4 text-lg">Download my latest resume below.</p>
+                    <p className="text-gray-300 mb-4 text-lg">Download my latest resume below</p>
                     <a
                         href="/pascua-portfolio/Pascua_Novemger_D_Resume.pdf"
                         download="Novemger_Pascua_Resume.pdf"

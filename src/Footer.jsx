@@ -1,47 +1,85 @@
 import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGithub, FaFacebook, FaInstagram, FaDownload } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-        <footer id="contact" className="p-8 bg-gray-900 text-white rounded-lg shadow-lg text-center">
-            {/* Contact Info */}
-            <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
-            <p className="text-gray-300 mb-6">I'd love to connect! Reach me via phone, email, or social media.</p>
-
-            <div className="max-w-lg mx-auto space-y-4">
-                <div className="flex items-center justify-center gap-3 text-lg">
-                    <FaPhoneAlt className="text-blue-400 text-xl" />
-                    <a href="tel:+639295360588" className="hover:underline">
-                        +63 929 536 0588
-                    </a>
+        <motion.footer
+            id="contact"
+            className="p-10 bg-gray-900 text-white rounded-t-2xl shadow-lg text-center border-t-4 border-blue-500"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+        >
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+                {/* Contact Info */}
+                <div className="text-center md:text-left">
+                    <h2 className="text-3xl font-bold mb-3 text-blue-400">Contact Me</h2>
+                    <p className="text-gray-300 mb-4 text-lg">Feel free to reach out via phone or email.</p>
+                    <div className="space-y-2">
+                        <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
+                            <FaPhoneAlt className="text-blue-400 text-2xl" />
+                            <a href="tel:+639295360588" className="hover:text-blue-500 transition duration-300">
+                                +63 929 536 0588
+                            </a>
+                        </div>
+                        <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
+                            <FaEnvelope className="text-red-400 text-2xl" />
+                            <a href="mailto:novemgerpascua1019@gmail.com" className="hover:text-red-500 transition duration-300">
+                                novemgerpascua1019@gmail.com
+                            </a>
+                        </div>
+                        <div className="flex items-center justify-center md:justify-start gap-3 text-lg">
+                            <FaMapMarkerAlt className="text-green-400 text-2xl" />
+                            <span className="text-gray-300">Central Bicutan, Taguig City, Metro Manila, Philippines</span>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex items-center justify-center gap-3 text-lg">
-                    <FaEnvelope className="text-red-400 text-xl" />
-                    <a href="mailto:novemgerpascua1019@gmail.com" className="hover:underline">
-                        novemgerpascua1019@gmail.com
-                    </a>
-                </div>
-            </div>
 
-            {/* Social Links */}
-            <div className="mt-6">
-                <h3 className="text-xl font-semibold text-gray-300">Follow Me</h3>
-                <div className="flex justify-center gap-6 mt-4">
-                    <a href="https://github.com/XdebronneX" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className="text-3xl hover:text-gray-400 transition duration-300" />
-                    </a>
-                    <a href="https://www.facebook.com/jacks.martel" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="text-3xl hover:text-blue-400 transition duration-300" />
-                    </a>
-                    <a href="https://www.instagram.com/evansmartel" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="text-3xl hover:text-pink-400 transition duration-300" />
+                {/* Social Links */}
+                <div className="text-center">
+                    <h2 className="text-3xl font-bold mb-3 text-blue-400">Follow Me</h2>
+                    <p className="text-gray-300 mb-4 text-lg">Connect with me on social media.</p>
+                    <div className="flex justify-center gap-6 mt-2">
+                        {[
+                            { icon: FaGithub, href: "https://github.com/XdebronneX", color: "hover:text-gray-400" },
+                            { icon: FaFacebook, href: "https://www.facebook.com/jacks.martel", color: "hover:text-blue-400" },
+                            { icon: FaInstagram, href: "https://www.instagram.com/evansmartel", color: "hover:text-pink-400" },
+                        ].map(({ icon: Icon, href, color }, index) => (
+                            <motion.a
+                                key={index}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`text-3xl transition duration-300 ${color}`}
+                                whileHover={{ scale: 1.2 }}
+                            >
+                                <Icon />
+                            </motion.a>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Resume Download */}
+                <div className="text-center md:text-right">
+                    <h2 className="text-3xl font-bold mb-3 text-blue-400">Resume</h2>
+                    <p className="text-gray-300 mb-4 text-lg">Download my latest resume below.</p>
+                    <a
+                        href="/pascua-portfolio/Pascua_Novemger_D_Resume.pdf"
+                        download="Novemger_Pascua_Resume.pdf"
+                        className="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md text-lg font-semibold hover:bg-blue-600 transition duration-300"
+                    >
+                        <FaDownload className="mr-2" />
+                        Download
                     </a>
                 </div>
             </div>
 
             {/* Footer Text */}
-            <p className="text-gray-500 mt-6 text-sm">© {new Date().getFullYear()} | Built by <strong>NOVEMGER DAYOT PASCUA</strong></p>
-        </footer>
+            <p className="text-gray-500 mt-10 text-sm">
+                © {new Date().getFullYear()} | Built by <strong className="text-blue-400">NOVEMGER DAYOT PASCUA</strong>
+            </p>
+        </motion.footer>
     );
 };
 

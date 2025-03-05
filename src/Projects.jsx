@@ -24,6 +24,7 @@ import { MdOutlineTransitEnterexit } from "react-icons/md";
 import freelance1 from "./assets/freelance1.png";
 import freelance2 from "./assets/freelance1-1.png";
 import freelance3 from "./assets/freelance1-2.png";
+
 const projects = [
     {
         name: "Backend API E-Learning",

@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Card } from "primereact/card";
-import { Button } from "primereact/button";
 import Portfolio from "./assets/portfolio.png";
 import Portfolio1 from "./assets/portfolio1.png";
 import Portfolio2 from "./assets/portfolio2.png";
@@ -20,7 +19,6 @@ import shoe2 from "./assets/shoe1-2.png";
 import motorcycle from "./assets/motorcycle.png";
 import motorcycle1 from "./assets/motorcycle1-1.png";
 import motorcycle2 from "./assets/motorcycle1-2.png";
-import { MdOutlineTransitEnterexit } from "react-icons/md";
 import freelance1 from "./assets/freelance1.png";
 import freelance2 from "./assets/freelance1-1.png";
 import freelance3 from "./assets/freelance1-2.png";

@@ -7,29 +7,30 @@ const itSupportSkills = [
     { category: "Operating System", skills: [{ name: "Windows", icon: <FaWindows className="text-blue-500 text-6xl" /> }] },
     {
         category: "Virtualization",
-        skills: [
-            { name: "Oracle VirtualBox", icon: <SiVirtualbox className="text-green-400 text-6xl" /> },
-        ]
+        skills: [{ name: "Oracle VirtualBox", icon: <SiVirtualbox className="text-green-700 text-6xl" /> }]
+        
     },
     {
-        category: "Support Tools", skills: [
+        category: "Support Tools",
+        skills: [
             { name: "TeamViewer", icon: <SiTeamviewer className="text-blue-400 text-6xl" /> },
             { name: "AnyDesk", icon: <SiAnydesk className="text-red-500 text-6xl" /> },
         ]
     },
-
     {
-        category: "Network & Security", skills: [
+        category: "Network & Security",
+        skills: [
             { name: "Network Troubleshooting", icon: <FaNetworkWired className="text-green-500 text-6xl" /> },
             { name: "Cybersecurity Awareness", icon: <MdOutlineSecurity className="text-gray-400 text-6xl" /> },
         ]
     },
-
     {
-        category: "Hardware & Software", skills: [
+        category: "Hardware & Software",
+        skills: [
             { name: "Printer & Peripheral Setup", icon: <FaTools className="text-yellow-500 text-6xl" /> },
             { name: "Desktop & Laptop Diagnosis", icon: <FaLaptopMedical className="text-red-400 text-6xl" /> },
             { name: "Software Installation", icon: <MdOutlineSettingsApplications className="text-gray-400 text-6xl" /> },
+            
         ]
     },
 ];
@@ -44,17 +45,19 @@ const ITSupportStack = () => {
             {itSupportSkills.map((section, index) => (
                 <div key={index} className="mb-12">
                     <h3 className="text-3xl font-semibold text-gray-300 mb-8 uppercase">{section.category}</h3>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+
+                    {/* Centered Grid Layout */}
+                    <div className="flex flex-wrap justify-center gap-6">
                         {section.skills.map((skill, skillIndex) => (
                             <div
                                 key={skillIndex}
                                 className="group flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg shadow-lg 
-                                        transition-transform duration-300 hover:scale-105 hover:shadow-blue-500/50"
+                                    transition-transform duration-300 hover:scale-105 hover:shadow-blue-500/50 w-36 h-36"
                             >
                                 <div className="text-5xl group-hover:animate-bounce">
                                     {skill.icon}
                                 </div>
-                                <p className="text-white mt-2 font-semibold">{skill.name}</p>
+                                <p className="text-white mt-2 font-semibold text-center">{skill.name}</p>
                             </div>
                         ))}
                     </div>

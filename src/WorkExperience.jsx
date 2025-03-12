@@ -3,13 +3,25 @@ import { motion } from "framer-motion";
 
 const workExperiences = [
     {
-        position: "IT Support",
+        position: "Backend Developer (Freelance)",
+        company: "Grading System",
+        location: "Remote",
+        duration: "October 2024 - January 2025",
+    },
+    {
+        position: "Backend Developer (Freelance)",
+        company: "E-learning",
+        location: "Remote",
+        duration: "September 2024 - November 2024",
+    },
+    {
+        position: "IT Support (College Internship)",
         company: "Meatworld International Inc.",
         location: "Makati City",
         duration: "June 19 - August 20, 2024",
     },
     {
-        position: "Fullstack Developer",
+        position: "Fullstack Developer (College Internship)",
         company: "iCargo Pacific",
         location: "Mandaluyong City",
         duration: "May 13 - June 14, 2024",
@@ -46,4 +58,3 @@ const WorkExperience = () => {
 };
 
 export default WorkExperience;
-

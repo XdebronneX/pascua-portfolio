@@ -6,7 +6,7 @@ const workExperiences = [
         position: "Backend Developer (Freelance)",
         company: "Grading System",
         location: "Remote",
-        duration: "October 2024 - January 2025",
+        duration: "October 28, 2024 - January 20, 2025",
     },
     {
         position: "Backend Developer (Freelance)",

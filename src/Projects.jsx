@@ -150,7 +150,7 @@ const Projects = () => {
                         </p>
 
                         {/* Push Button to the Bottom */}
-                        <div className="mt-auto flex justify-center pt-6">
+                        {/* <div className="mt-auto flex justify-center pt-6">
                             <button
                                 className="group px-6 py-2.5 text-white font-semibold rounded-lg flex items-center gap-3 
                             bg-blue-500 bg-opacity-30 backdrop-blur-md shadow-md 
@@ -161,7 +161,7 @@ const Projects = () => {
                                 View Project
                                 <LuExternalLink className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </button>
-                        </div>
+                        </div> */}
 
                     </Card>
                 ))}
